@@ -1,0 +1,25 @@
+<!--pages/phone/phone.wxml-->
+<!-- <text>pages/phone/phone.wxml</text> -->
+<view class='section section-swiper'>
+    <swiper class='slide' indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" circular="{{true}}">
+      <swiper-item wx:for="{{lunbolist}}" wx:key="{{item.lid}}">
+        <image src="{{item.img_url}}" mode="aspectFill" class="slide-image" data-id="{{item.lid}}" />
+      </swiper-item>
+    </swiper>
+</view>
+
+<view class='section block'>
+    <view  wx:for="{{blocklist}}" wx:key="{{item.id}}">
+      <view class='section goods-list'>
+      <view  wx:for="{{item.section}}" wx:key="{{item.id}}">
+        <view class="goods-item">
+          <image class="goods-img {{item.is_new?'new':''}} {{item.on_sale?'on-sale':''}}" src='{{item.img_url}}'></image>
+          <text class='title'>{{item.title}}</text>
+          <text class='desp'>{{item.desp}}</text>
+          <text class='meta'>{{item.meta}}</text>
+          <text class='discount'>{{item.discount}}</text>
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>

@@ -1,0 +1,75 @@
+/* pages/mine/mine.wxss */
+.weui-cells{
+  margin-top: 18rpx;
+  font-size: 12pt;
+}
+.weui-cell{
+  height: 150rpx;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.weui-cell__hd{
+  width: 120rpx;
+  height: 120rpx;
+  padding-left: 30rpx;
+  padding-top: 15rpx;
+  float: left;
+}
+.weui-cell__hd image{
+  width: 100%;
+  height: 100%;
+}
+.weui-cell__ft{
+  float: right;
+  height: 150rpx;
+  line-height: 180rpx;
+  margin-right: 50rpx;
+}
+.weui-cell__ft .qrCode image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.weui-cell__bd{
+  width: 300rpx;
+  height: 110rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  padding: 10rpx;
+}
+.name{
+  font-size: 16px;
+  margin-top: 10rpx;
+}
+.account{
+  width: 175rpx;
+  height: 40rpx;
+  background: #eee;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+.weui-cell.weui-cell_access{
+  height: 100rpx;
+}
+.weui-cell1{
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+  padding-left: 30rpx;
+}
+.weui-cell1 image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+}
+.weui-cell2{
+  float: left;
+  font-size: 14px;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 40rpx;
+}

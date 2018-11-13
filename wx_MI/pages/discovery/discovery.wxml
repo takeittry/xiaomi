@@ -1,0 +1,11 @@
+<!--pages/discovery/discovery.wxml-->
+<!-- <text>pages/discovery/discovery.wxml</text> -->
+<view class='cards'>
+  <view class='card' wx:for="{{videolist}}" wx:key="{{item.id}}">
+    <video src='{{}}' poster='{{item.img_url}}' objectFit="cover"></video>
+    <view class='content'>
+      <view class='header'>{{item.header}}</view>
+      <view class='desp'>{{item.desp}}</view>
+    </view>
+  </view>
+</view>

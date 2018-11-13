@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="weui-cells">
+        <view class="weui-cell">
+            <view class="weui-cell__hd head">
+                <image src="../../assets/icons/avatar.jpg"></image>
+            </view>
+            <view class="weui-cell__bd">
+                <view class="name">云中玉卷</view>
+                <view class="account" bindtap="bindAccount">
+                    绑定小米账号
+                </view>
+            </view>
+            <view class="weui-cell__ft">
+                <view class="qrCode">
+                    <image src="../../assets/icons/qrcode.png" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells">
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="">
+            <view class="weui-cell1">
+                <image src="../../assets/icons/order.png" />
+            </view>
+            <view class="weui-cell2">我的订单</view>
+        </navigator>
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="">
+            <view class="weui-cell1">
+                <image src="../../assets/icons/addr.png" />
+            </view>
+            <view class="weui-cell2">我的收货地址</view>
+        </navigator>
+        <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="">
+            <view class="weui-cell1">
+                <image src="../../assets/icons/coupon.png" />
+            </view>
+            <view class="weui-cell2">我的优惠券</view>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell1">
+                <image src="../../assets/icons/fcode.png" />
+            </view>
+            <view class="weui-cell2">我的F码</view>
+        </navigator>
+    </view>
+    <view class="weui-cells">
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell1">
+                <image src="../../assets/icons/setting.png" />
+            </view>
+            <view class="weui-cell2">设置</view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,67 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+<view class='container'>
+  <!-- 搜索框 -->
+  <view class='section searchBar'>
+    <view class='section search_box'>
+      <image src='../../assets/icons/search.png' class='search_icon'></image>
+      <input type='text'name="searchBar" disabled='true' placeholder="搜索商品" class="search-plac"/>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class='section section-swiper'>
+    <swiper class='slide' indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" circular="{{true}}">
+      <swiper-item wx:for="{{lunbolist}}" wx:key="{{item.lid}}">
+        <image src="{{item.img_url}}" mode="aspectFill" class="slide-image" data-id="{{item.lid}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- nav导航栏 -->
+  <view class='section navBar'>
+    <view class='section nav-list'>
+      <navigator wx:for="{{navlist}}" wx:key="{{id}}" url='../phone/phone'>
+        <view class='nav-item'>
+          <image class='item-img' src='{{item.img_url}}'></image>
+          <text class='item-text'>{{item.title}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- 首页活动块 -->
+  <view class='section activity'>
+    <view class='activity up'>
+      <view class='left-list'>
+        <image src='{{activitylist[0].img_url}}'></image>
+      </view>
+      <view class='right-list'>
+        <image src='{{activitylist[1].img_url}}'></image>
+        <image src='{{activitylist[2].img_url}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 首页商品 -->
+  <view class='section block'>
+    <view  wx:for="{{blocklist}}" wx:key="{{item.id}}">
+      <view class='section cover'>
+        <image class='cover-img' src='{{item.img_url}}'></image>
+      </view>
+      <view class='section goods-list'>
+      <view  wx:for="{{item.section}}" wx:key="{{item.id}}">
+        <view class="goods-item">
+          <image class="goods-img {{item.is_new?'new':''}} {{item.on_sale?'on-sale':''}}" src='{{item.img_url}}'></image>
+          <text class='title'>{{item.title}}</text>
+          <text class='desp'>{{item.desp}}</text>
+          <text class='meta'>{{item.meta}}</text>
+          <text class='discount'>{{item.discount}}</text>
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>
+  
+  <view class='section bottom-line'>
+    到底啦... ...
+  </view>
+</view>
